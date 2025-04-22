@@ -7,7 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(img.width, img.height);
-  smallPoint = 20;
+  smallPoint = 4;
   largePoint = 40;
   imageMode(CENTER);
   noStroke();
@@ -20,7 +20,7 @@ function draw() {
   let x = floor(random(img.width));
   let y = floor(random(img.height));
   let pix = img.get(x, y);
-  fill(pix, 12);
+  fill(pix, 128);
   ellipse(x, y, pointillize, pointillize);
 }
 
